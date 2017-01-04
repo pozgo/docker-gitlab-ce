@@ -1,0 +1,20 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - docker info && docker version
+
+test:
+  pre:
+    - docker build -t polinux/gitlab-ce:circleci .
+
+  override:
+  # Start GitLab
+    - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:circleci
+    - docker logs -f gitlab | tee -a ${CIRCLE_ARTIFACTS}/gitlab.log:
+          background: true
+    - while true; do if grep "You'll be prompted to create one on your first visit" -a ${CIRCLE_ARTIFACTS}/gitlab.log; then break; else sleep 1; fi done
+    # Check connection on port 80
+    - curl -sSLi --head http://127.0.0.1/ | grep "HTTP/1.1 200 OK"
