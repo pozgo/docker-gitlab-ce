@@ -1,4 +1,4 @@
-FROM gitlab/gitlab-ce:8.17.0-ce.0
+FROM gitlab/gitlab-ce:8.17.1-ce.2
 MAINTAINER Przemyslaw Ozgo linux@ozgo.info
 
 RUN \
