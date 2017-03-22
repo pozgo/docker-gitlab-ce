@@ -20,6 +20,7 @@ Options added so far:
 ### Versions
 
 * `polinux/gitlab-ce:latest` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
+* `polinux/gitlab-ce:8.17.4-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.4-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
 * `polinux/gitlab-ce:8.17.3-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.3-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
 * `polinux/gitlab-ce:8.17.2-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.2-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
 * `polinux/gitlab-ce:8.17.1-ce.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.1-ce.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
