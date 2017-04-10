@@ -19,29 +19,26 @@ Options added so far:
 
 ### Versions
 
-* `polinux/gitlab-ce:latest` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:rc` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/rc.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:nightly` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/nightly.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:9.0.4-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.4-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:9.0.3-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.3-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:9.0.2-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.2-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:9.0.1-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.1-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:9.0.0-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.0-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.17.4-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.4-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.17.3-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.3-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.17.2-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.2-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.17.1-ce.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.1-ce.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.17.0-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.0-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.6` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.6.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.5` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.5.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.4` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.4.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.3` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.3.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.1` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.1.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.16.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.15.4` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.15.4.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.15.3` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.15.3.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `polinux/gitlab-ce:8.15.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.15.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
+* `latest` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
+* `rc` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/rc.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
+* `nightly` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/nightly.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
+
+| 9.x | 8.x |
+| :-: | :-: |
+|`9.0.4-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.4-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|`8.17.4-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.4-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+|`9.0.3-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.3-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|`8.17.3-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.3-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+|`9.0.2-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.2-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|`8.17.2-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.2-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+|`9.0.1-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.1-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|`8.17.1-ce.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.1-ce.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+|`9.0.0-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/9.0.0-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|`8.17.0-ce.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.17.0-ce.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.6` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.6.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.5` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.5.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.4` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.4.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.3` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.3.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.2` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.2.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.1` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.1.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+||`8.16.0` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/8.16.0.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)|
+
+**Older also versions available through [tags](https://hub.docker.com/r/polinux/gitlab-ce/tags/)**
 
 ### Environmental Variable
 
