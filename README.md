@@ -1,4 +1,4 @@
-### GitLab in a docker.
+# GitLab in a docker
 
 [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  (latest)  
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)
@@ -12,9 +12,10 @@
 
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab server using [gitlab/gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker image as base.
 
-Purpose of this image is to add missing options into the docker image.  
+Purpose of this image is to add missing options into the docker image.
+
 Options added so far:  
-  - Backup Time (crontab based)  
+- Backup Time (crontab based)  
   `*see environmental variables*`
 
 ### Versions
