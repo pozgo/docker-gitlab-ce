@@ -1,5 +1,4 @@
-FROM gitlab/gitlab-ce:9.4.5-ce.0
-MAINTAINER Przemyslaw Ozgo linux@ozgo.info
+FROM gitlab/gitlab-ce:9.5.0-ce.0
 
 RUN \
   apt-get update && \
