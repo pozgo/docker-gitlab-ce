@@ -6,7 +6,7 @@
 [![GitHub Forks](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce)  
 [![Stars on Docker Hub](https://img.shields.io/docker/stars/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
 [![Pulls on Docker Hub](https://img.shields.io/docker/pulls/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)  
-[![](https://images.microbadger.com/badges/version/polinux/gitlab-ce:10.0.0-ce.0.svg)](http://microbadger.com/images/polinux/gitlab-ce)
+[![](https://images.microbadger.com/badges/version/polinux/gitlab-ce:10.0.1-ce.0.svg)](http://microbadger.com/images/polinux/gitlab-ce)
 [![](https://images.microbadger.com/badges/image/polinux/gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)
 
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab server using [gitlab/gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker image as base.
