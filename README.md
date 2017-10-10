@@ -1,13 +1,18 @@
 # GitLab in a docker
 
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  (latest)  
-[![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce)
-[![GitHub Forks](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce)  
-[![Stars on Docker Hub](https://img.shields.io/docker/stars/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
-[![Pulls on Docker Hub](https://img.shields.io/docker/pulls/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)  
-[![](https://images.microbadger.com/badges/version/polinux/gitlab-ce:10.0.2-ce.0.svg)](http://microbadger.com/images/polinux/gitlab-ce)
-[![](https://images.microbadger.com/badges/image/polinux/gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)
+[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)
+[![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)  
+[![Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg?style=social&label=Stars)]()
+[![Fork](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg?style=social&label=Fork)]()  
+[![Docker Start](https://img.shields.io/docker/stars/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
+[![Docker Auto](https://img.shields.io/docker/automated/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)  
+[![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)
+
+
+Felling like supporting me in my projects use donate button. Thank You!  
+[![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
+
 
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab server using [gitlab/gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker image as base.
 
