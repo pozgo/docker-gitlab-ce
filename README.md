@@ -14,26 +14,24 @@ Felling like supporting me in my projects use donate button. Thank You!
 [![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
 
 
-[Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab server using [gitlab/gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker image as base.
-
-Purpose of this image is to add missing options into the docker image.
+[Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server. 
+It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users. 
 
 Options added so far:  
 - Backup Time (crontab based)  
   `*see environmental variables*`
 
-### Versions
+*If you have an idea what should be added please let us know*
 
-* `latest` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `rc` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/rc.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-* `nightly` - [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/nightly.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)  
-
-
-**More also versions available through [tags](https://hub.docker.com/r/polinux/gitlab-ce/tags/)**
+**More versions available through [tags](https://hub.docker.com/r/polinux/gitlab-ce/tags/)**
 
 ### Environmental Variable
 
-- `BACKUP_TIME` - Default set to: "0 12 * * *"  
+|Variable|Description|
+|:--|:--|
+|`BACKUP_TIME`|Default set to: `0 12 * * *` <sup>1</sup>|
+
+<sup>1</sup> - Cron based format.
 
 **All options available through offcial image are available too. [GitLab Docs](https://docs.gitlab.com/omnibus/docker/)**
 
