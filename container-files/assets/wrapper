@@ -9,7 +9,6 @@ function sigterm_handler() {
 
 trap "sigterm_handler; exit" TERM
 
-source /RELEASE
 echo "Thank you for using GitLab Docker Image!"
 echo "Current version: $RELEASE_PACKAGE=$RELEASE_VERSION"
 echo ""
