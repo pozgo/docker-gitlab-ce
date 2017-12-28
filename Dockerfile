@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-SHELL ["/bin/sh", "-c"],
-
 ENV \
       BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
