@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-SHELL ["/bin/sh", "-c"],
-
 ENV \
       BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
@@ -35,6 +33,3 @@ EXPOSE 443 80 22
 VOLUME ["/etc/gitlab", "/var/opt/gitlab", "/var/log/gitlab"]
 
 CMD ["/assets/wrapper"]
-
-HEALTHCHECK --interval=60s --timeout=30s --retries=5 \
-CMD /opt/gitlab/bin/gitlab-healthcheck --fail

@@ -15,6 +15,6 @@ test:
     - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:circleci
     - docker logs -f gitlab | tee -a ${CIRCLE_ARTIFACTS}/gitlab.log:
           background: true
-    - while true; do if grep "You'll be prompted to create one on your first visit" -a ${CIRCLE_ARTIFACTS}/gitlab.log; then break; else sleep 1; fi done
+    - while true; do if grep "Completed 200 OK in" -a ${CIRCLE_ARTIFACTS}/gitlab.log; then break; else sleep 1; fi done
     # Check connection on port 80
-    - curl -sSLi --head http://127.0.0.1/ | grep "HTTP/1.1 200 OK"
+    - curl -sSLi --head http://127.0.0.1 | grep "HTTP/1.1 200 OK"
