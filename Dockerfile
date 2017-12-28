@@ -33,6 +33,3 @@ EXPOSE 443 80 22
 VOLUME ["/etc/gitlab", "/var/opt/gitlab", "/var/log/gitlab"]
 
 CMD ["/assets/wrapper"]
-
-HEALTHCHECK --interval=60s --timeout=30s --retries=5 \
-CMD /opt/gitlab/bin/gitlab-healthcheck --fail
