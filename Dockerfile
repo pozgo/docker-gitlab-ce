@@ -7,7 +7,7 @@ ENV \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
       RELEASE_VERSION=10.3.2-ce.0 \
-      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_${RELEASE_VERSION}_amd64.deb
+      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_$RELEASE_VERSION_amd64.deb
 
 COPY container-files /
 
