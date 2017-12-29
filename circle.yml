@@ -1,8 +1,8 @@
 machine:
   services:
     - docker
-  environment:
-    RELEASE: 10.3.2-ce.0
+  # environment:
+  #   RELEASE: 10.3.2-ce.0
 
 dependencies:
   override:
@@ -12,6 +12,7 @@ dependencies:
 test:
   override:
   # Start GitLab
+    - export RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}')
     - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:$RELEASE
     - while true; do if docker logs gitlab | grep "Completed 200 OK in"; then break; else sleep 1; fi done
     # Check connection on port 80
