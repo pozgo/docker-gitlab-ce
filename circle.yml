@@ -8,13 +8,14 @@ dependencies:
 
 test:
   pre:
-    - docker build -t polinux/gitlab-ce:circleci .
+    - docker build -t polinux/gitlab-ce:$CIRCLE_TAG .
 
   override:
   # Start GitLab
-    - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:circleci
-    - docker logs -f gitlab | tee -a ${CIRCLE_ARTIFACTS}/gitlab.log:
-          background: true
-    - while true; do if grep "Completed 200 OK in" -a ${CIRCLE_ARTIFACTS}/gitlab.log; then break; else sleep 1; fi done
+    - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:$CIRCLE_TAG
+    - while true; do if docker logs gitlab | grep "Completed 200 OK in"; then break; else sleep 1; fi done
     # Check connection on port 80
     - curl -sSLi --head http://127.0.0.1 | grep "HTTP/1.1 200 OK"
+    # Deploy To Docker Hub
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - docker push polinux/gitlab-ce:$CIRCLE_TAG
