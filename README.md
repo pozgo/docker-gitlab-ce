@@ -4,9 +4,6 @@
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg?style=social&label=Fork)]()  
-[![Docker Start](https://img.shields.io/docker/stars/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
-[![Docker Pulls](https://img.shields.io/docker/pulls/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
-[![Docker Auto](https://img.shields.io/docker/automated/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)  
 [![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)  
 [![Docker build](http://dockeri.co/image/polinux/gitlab-ce)](https://hub.docker.com/r/polinux/gitlab-ce/)
 
