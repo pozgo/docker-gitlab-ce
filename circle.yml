@@ -9,6 +9,7 @@ dependencies:
 test:
   pre:
     - docker build -t polinux/gitlab-ce:$CIRCLE_TAG .
+    - docker build -t polinux/gitlab-ce:latest .
 
   override:
   # Start GitLab
@@ -19,3 +20,4 @@ test:
     # Deploy To Docker Hub
     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
     - docker push polinux/gitlab-ce:$CIRCLE_TAG
+    - docker push polinux/gitlab-ce:latest
