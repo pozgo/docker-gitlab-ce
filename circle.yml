@@ -1,23 +1,26 @@
 machine:
   services:
     - docker
+  environment:
+    RELEASE: 10.3.2-ce.0
 
 dependencies:
-  pre:
-    - docker info && docker version
-
-test:
-  pre:
-    - docker build -t polinux/gitlab-ce:$CIRCLE_TAG .
+  override:
+    - docker build -t polinux/gitlab-ce:$RELEASE .
     - docker build -t polinux/gitlab-ce:latest .
 
+test:
   override:
   # Start GitLab
-    - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:$CIRCLE_TAG
+    - docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:$RELEASE
     - while true; do if docker logs gitlab | grep "Completed 200 OK in"; then break; else sleep 1; fi done
     # Check connection on port 80
     - curl -sSLi --head http://127.0.0.1 | grep "HTTP/1.1 200 OK"
-    # Deploy To Docker Hub
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-    - docker push polinux/gitlab-ce:$CIRCLE_TAG
-    - docker push polinux/gitlab-ce:latest
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push polinux/gitlab-ce:$RELEASE
+      - docker push polinux/gitlab-ce:latest

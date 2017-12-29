@@ -7,7 +7,8 @@
 [![Docker Start](https://img.shields.io/docker/stars/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
 [![Docker Pulls](https://img.shields.io/docker/pulls/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)
 [![Docker Auto](https://img.shields.io/docker/automated/polinux/gitlab-ce.svg)](https://hub.docker.com/r/polinux/gitlab-ce)  
-[![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)
+[![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)  
+[![Docker build](http://dockeri.co/image/polinux/gitlab-ce)](https://hub.docker.com/r/polinux/gitlab-ce/)
 
 
 Felling like supporting me in my projects use donate button. Thank You!  
