@@ -102,6 +102,7 @@ if [ ${PUPPET_PRE_RECEIVE_HOOK_SUPPORT} != 'false' ] && [ ! -f /opt/gitlab/embed
     # Set puppet version
     sed -i "s|5.1.0|${PUPPET_SERVER_VERSION}|" /opt/puppet-git-hook/Gemfile
     bundle install
+    gem cleanup gettext -v 3.2.2
     apt-get remove -yq gcc make
     mkdir -p /var/opt/gitlab/.puppetlabs/var
     chmod -R 777 /var/opt/gitlab/.puppetlabs/
