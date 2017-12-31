@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gitlab-server:
+    container_name: gitlab-server
+    image: polinux/gitlab-ce:latest
+    hostname: gitlab.mydomain.com
+    ports:
+      - "8080:80"
+    environment:
+      PUPPET_PRE_RECEIVE_HOOK_SUPPORT: 'true'
+      PUPPET_SERVER_VERSION: '5.3.3'
