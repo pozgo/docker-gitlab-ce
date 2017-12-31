@@ -1,4 +1,4 @@
-# GitLab in a docker
+# GitLab in a Docker on Steroids
 
 [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)  
@@ -17,6 +17,7 @@ It's build the same way offcial images but with this image we added missing opti
 
 Options added so far:  
 - Backup Time (crontab based)  
+- Puppet Pre-Receive hook with puppet-lint syntax check. Set to false by default. If selected needed packages will be installed on run stage after gitlab is reconfigured and running.
   `*see environmental variables*`
 
 *If you have an idea what should be added please let us know*
@@ -28,8 +29,13 @@ Options added so far:
 |Variable|Description|
 |:--|:--|
 |`BACKUP_TIME`|Default set to: `0 12 * * *` <sup>1</sup>|
+|`PUPPET_PRE_RECEIVE_HOOK_SUPPORT`|set `false` by default. use `enable` and specify version of puppet server `gem` package to install|
+|`PUPPET_SERVER_VERSION`|default set to `5.1.0` <sup>2</sup>|
 
-<sup>1</sup> - Cron based format.
+<sup>1</sup> - Cron based format.  
+<sup>2</sup> - To list all vailable version of `gem` package use command below on host with installed `rubygems`  
+
+    gem search '^puppet$' --all | grep -o '\((.*)\)$' | tr -d '() ' | tr ',' "\n" | sort
 
 **All options available through offcial image are available too. [GitLab Docs](https://docs.gitlab.com/omnibus/docker/)**
 
@@ -43,7 +49,7 @@ Options added so far:
       -p 1022:22 \
       polinux/gitlab-ce
 
-Set backup time to 15:00
+Set backup time to 15:00 and puppet pre-receive hook support for puppet 5.3.3
 
     docker run \
       -d \
@@ -52,7 +58,13 @@ Set backup time to 15:00
       -p 443:443 \
       -p 1022:22 \
       -e BACKUP_TIME="0 15 * * *" \
+      -e PUPPET_PRE_RECEIVE_HOOK_SUPPORT='true' \
+      -e PUPPET_SERVER_VERSION='5.3.3' \
       polinux/gitlab-ce
+
+Use `docker-compose.yml` file which contain basic setup of gitlab server with stand alone approach.
+
+    docker-compose up
 
 ### Build
 
