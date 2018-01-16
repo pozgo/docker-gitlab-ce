@@ -6,8 +6,8 @@ ENV \
       TERM=xterm \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
-      RELEASE_VERSION=10.3.2-ce.0 \
-      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_10.3.2-ce.0_amd64.deb \
+      RELEASE_VERSION=10.3.3-ce.0 \
+      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_10.3.3-ce.0_amd64.deb \
       PUPPET_PRE_RECEIVE_HOOK_SUPPORT='false' \
       PUPPET_SERVER_VERSION='5.1.0'
 
