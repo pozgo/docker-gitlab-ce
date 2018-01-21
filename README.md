@@ -7,10 +7,8 @@
 [![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)  
 [![Docker build](http://dockeri.co/image/polinux/gitlab-ce)](https://hub.docker.com/r/polinux/gitlab-ce/)
 
-
 Felling like supporting me in my projects use donate button. Thank You!  
 [![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
-
 
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server. 
 It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users. 
@@ -35,9 +33,11 @@ Options added so far:
 <sup>1</sup> - Cron based format.  
 <sup>2</sup> - To list all vailable version of `gem` package use command below on host with installed `rubygems`  
 
-    gem search '^puppet$' --all | grep -o '\((.*)\)$' | tr -d '() ' | tr ',' "\n" | sort
+```bash
+gem search '^puppet$' --all | grep -o '\((.*)\)$' | tr -d '() ' | tr ',' "\n" | sort
+```
 
-**All options available through offcial image are available too. [GitLab Docs](https://docs.gitlab.com/omnibus/docker/)**
+**All options available through official image are available too. [GitLab Docs](https://docs.gitlab.com/omnibus/docker/)**
 
 ### Usage
 
