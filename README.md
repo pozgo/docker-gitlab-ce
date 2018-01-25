@@ -41,60 +41,75 @@ gem search '^puppet$' --all | grep -o '\((.*)\)$' | tr -d '() ' | tr ',' "\n" | 
 
 ### Usage
 
-    docker run \
-      -d \
-      --name gitlab \
-      -p 80:80 \
-      -p 443:443 \
-      -p 1022:22 \
-      polinux/gitlab-ce
+```bash
+docker run \
+    -d \
+    --name gitlab \
+    -p 80:80 \
+    -p 443:443 \
+    -p 1022:22 \
+    polinux/gitlab-ce
+```
 
 Set backup time to 15:00 and puppet pre-receive hook support for puppet 5.3.3
-
-    docker run \
-      -d \
-      --name gitlab \
-      -p 80:80 \
-      -p 443:443 \
-      -p 1022:22 \
-      -e BACKUP_TIME="0 15 * * *" \
-      -e PUPPET_PRE_RECEIVE_HOOK_SUPPORT='true' \
-      -e PUPPET_SERVER_VERSION='5.3.3' \
-      polinux/gitlab-ce
+```bash
+docker run \
+    -d \
+    --name gitlab \
+    -p 80:80 \
+    -p 443:443 \
+    -p 1022:22 \
+    -e BACKUP_TIME="0 15 * * *" \
+    -e PUPPET_PRE_RECEIVE_HOOK_SUPPORT='true' \
+    -e PUPPET_SERVER_VERSION='5.3.3' \
+    polinux/gitlab-ce
+```
 
 Use `docker-compose.yml` file which contain basic setup of gitlab server with stand alone approach.
 
-    docker-compose up
+```bash
+docker-compose up
+```
 
 ### Build
 
-    docker build -t polinux/gitlab-ce .
+```bash
+docker build -t polinux/gitlab-ce .
+```
 
 Docker troubleshooting
 ======================
 
 Use docker command to see if all required containers are up and running:
-```
+
+```bash
 $ docker ps
 ```
 
 Check logs of gitlab server container:
-```
+
+```bash
 $ docker logs gitlab
 ```
 
-Sometimes you might just want to review how things are deployed inside a running
- container, you can do this by executing a _bash shell_ through _docker's
- exec_ command:
-```
+Sometimes you might just want to review how things are deployed inside a running container, you can do this by executing a _bash shell_ through _docker's `exec_` command:
+
+```bash
 docker exec -ti gitlab /bin/bash
 ```
 
 History of an image and size of layers:
-```
+
+```bash
 docker history --no-trunc=true polinux/gitlab-ce | tr -s ' ' | tail -n+2 | awk -F " ago " '{print $2}'
 ```
 
-## Author
+---
 
+## Author
 Przemyslaw Ozgo (<linux@ozgo.info>)
+
+---
+
+### Acknowledgements
+I would like to thank [JetBrains](https://www.jetbrains.com/) for supporting me with Open Source endeavours.
