@@ -1,14 +1,12 @@
 FROM ubuntu:16.04
 
-ENV \
-      BACKUP_TIME="0 12 * * *" \
+ENV   BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
       TERM=xterm \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
-      RELEASE_VERSION=10.4.1-ce.0 \
-      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_10.4.1-ce.0_amd64.deb \
-      PUPPET_PRE_RECEIVE_HOOK_SUPPORT='false' \
+      RELEASE_VERSION=10.4.2-ce.0 \
+      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_10.4.2-ce.0_amd64.deb \
       PUPPET_SERVER_VERSION='5.1.0'
 
 COPY container-files /
