@@ -93,7 +93,7 @@ if [ -n "${GITLAB_POST_RECONFIGURE_SCRIPT+x}" ]; then
 fi
 
 # Add Puppet pre-receive hook support
-if [ ${PUPPET_PRE_RECEIVE_HOOK_SUPPORT} != 'false' ] && [ ! -f /opt/gitlab/embedded/service/gitlab-shell/hooks/commit_hooks ]; then
+if [ ! -f /opt/puppet-git-hook/Gemfile ]; then
     echo "Installing Puppet pre-receive hook"
     apt-get update -q && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq gcc make rubygems
