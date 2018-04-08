@@ -13,8 +13,6 @@ Felling like supporting me in my projects use donate button. Thank You!
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server. 
 It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users. 
 
-**Note: Removed Puppet support. This feature will be added in separate image.**
-
 Options added so far:  
 - Backup Time (crontab based)  
   `*see environmental variables*`
