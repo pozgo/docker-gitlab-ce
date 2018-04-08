@@ -13,9 +13,10 @@ Felling like supporting me in my projects use donate button. Thank You!
 [Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server. 
 It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users. 
 
+**Note: Removed Puppet support. This feature will be added in separate image.**
+
 Options added so far:  
 - Backup Time (crontab based)  
-- Puppet Pre-Receive hook with puppet-lint syntax check. Set to false by default. If selected needed packages will be installed on run stage after gitlab is reconfigured and running.
   `*see environmental variables*`
 
 *If you have an idea what should be added please let us know*
@@ -27,15 +28,9 @@ Options added so far:
 |Variable|Description|
 |:--|:--|
 |`BACKUP_TIME`|Default set to: `0 12 * * *` <sup>1</sup>|
-|`PUPPET_PRE_RECEIVE_HOOK_SUPPORT`|set `false` by default. use `enable` and specify version of puppet server `gem` package to install|
-|`PUPPET_SERVER_VERSION`|default set to `5.1.0` <sup>2</sup>|
 
 <sup>1</sup> - Cron based format.  
-<sup>2</sup> - To list all vailable version of `gem` package use command below on host with installed `rubygems`  
 
-```bash
-gem search '^puppet$' --all | grep -o '\((.*)\)$' | tr -d '() ' | tr ',' "\n" | sort
-```
 
 **All options available through official image are available too. [GitLab Docs](https://docs.gitlab.com/omnibus/docker/)**
 
@@ -60,8 +55,6 @@ docker run \
     -p 443:443 \
     -p 1022:22 \
     -e BACKUP_TIME="0 15 * * *" \
-    -e PUPPET_PRE_RECEIVE_HOOK_SUPPORT='true' \
-    -e PUPPET_SERVER_VERSION='5.3.3' \
     polinux/gitlab-ce
 ```
 
