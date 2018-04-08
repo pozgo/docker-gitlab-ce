@@ -92,28 +92,6 @@ if [ -n "${GITLAB_POST_RECONFIGURE_SCRIPT+x}" ]; then
     eval ${GITLAB_POST_RECONFIGURE_SCRIPT}
 fi
 
-# Add Puppet pre-receive hook support
-if [ ! -f /opt/puppet-git-hook/Gemfile ]; then
-    echo "Installing Puppet pre-receive hook"
-    apt-get update -q && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -yq gcc make rubygems
-    git clone https://github.com/pozgo/puppet-git-hooks.git /opt/puppet-git-hook/
-    cd /opt/puppet-git-hook/
-    # Set puppet version
-    sed -i "s|5.1.0|${PUPPET_SERVER_VERSION}|" /opt/puppet-git-hook/Gemfile
-    bundle install
-    mkdir -p /var/opt/gitlab/.puppetlabs/var
-    chmod -R 777 /var/opt/gitlab/.puppetlabs/
-    echo "Linking hooks with defult gitlab hook directory"
-    ln -s /opt/puppet-git-hook/commit_hooks/ /opt/gitlab/embedded/service/gitlab-shell/hooks/commit_hooks
-    if [ -f /opt/gitlab/embedded/service/gitlab-shell/hooks/pre-receive ]; then
-        rm -f /opt/gitlab/embedded/service/gitlab-shell/hooks/pre-receive
-    fi
-    ln -s /opt/puppet-git-hook/pre-receive /opt/gitlab/embedded/service/gitlab-shell/hooks/pre-receive
-    echo "Puppet Pre Receive Hook Installed and linked with default hooks"
-    rm -rf /var/lib/apt/lists/*
-fi
-
 # Tail all logs
 gitlab-ctl tail &
 
