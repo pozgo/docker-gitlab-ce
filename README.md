@@ -1,6 +1,6 @@
 # GitLab in a Docker on Steroids
 
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-gitlab-ce/master.svg)](https://circleci.com/gh/pozgo/docker-gitlab-ce)
+[![Build Status](https://travis-ci.org/pozgo/docker-gitlab-ce.svg?branch=master)](https://travis-ci.org/pozgo/docker-gitlab-ce)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg?style=social&label=Fork)]()  
