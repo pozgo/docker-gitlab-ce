@@ -29,7 +29,7 @@ jobs:
         - docker login -u $DOCKER_USER -p $DOCKER_PASS
         - docker pull polinux/gitlab-ce:stage
         - docker tag polinux/gitlab-ce:stage polinux/gitlab-ce:latest
-        - export RELEASE=$(grep "HAPROXY_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}'); docker tag polinux/gitlab-ce:stage polinux/gitlab-ce:$RELEASE
+        - export RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}'); docker tag polinux/gitlab-ce:stage polinux/gitlab-ce:$RELEASE
         - docker push polinux/gitlab-ce:latest
         - export RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}'); docker push polinux/gitlab-ce:$RELEASE
         - docker push polinux/gitlab-ce:latest
