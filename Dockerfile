@@ -5,8 +5,8 @@ ENV   BACKUP_TIME="0 12 * * *" \
       TERM=xterm \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
-      RELEASE_VERSION=10.8.5-ce.0 \
-      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_10.8.5-ce.0_amd64.deb
+      RELEASE_VERSION=11.3.6-ce.0 \
+      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_11.3.6-ce.0_amd64.deb
 
 COPY container-files /
 
