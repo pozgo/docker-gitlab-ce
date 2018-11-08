@@ -13,7 +13,7 @@ jobs:
         - RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}'); docker build -t polinux/gitlab-ce:$RELEASE .
         - docker build -t polinux/gitlab-ce:latest .
         - RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}'); docker run -d -p 80:80 --name gitlab -e BACKUP_TIME="0 15 * * *" polinux/gitlab-ce:$RELEASE
-        - while true; do if docker logs gitlab | grep "Completed 200 OK in"; then break; else sleep 1; fi done
+        - while true; do if docker logs gitlab | grep "Completed 200 OK in"; then break; else sleep 30; fi done
         # Check connection on port 80
         - curl -sSLi --head http://127.0.0.1 | grep "HTTP/1.1 200 OK"
 
