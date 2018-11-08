@@ -44,7 +44,7 @@ docker run \
     polinux/gitlab-ce
 ```
 
-Set backup time to 15:00 and puppet pre-receive hook support for puppet 5.3.3
+Set backup time to 15:00 
 ```bash
 docker run \
     -d \
