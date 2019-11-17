@@ -1,8 +1,8 @@
 # GitLab in a Docker on Steroids
 
-[![Build Status](https://travis-ci.org/pozgo/docker-gitlab-ce.svg?branch=master)](https://travis-ci.org/pozgo/docker-gitlab-ce)
+[![Build Status](https://jenkins.ozgo.info/jenkins/buildStatus/icon?job=gh-pozgo-docker-gitlab)](https://jenkins.ozgo.info/jenkins/job/gh-pozgo-docker-gitlab/)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpozgo%2Fdocker-gitlab-ce.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpozgo%2Fdocker-gitlab-ce?ref=badge_shield)
- 
+
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-gitlab-ce.svg?style=social&label=Fork)]()  
 [![](https://img.shields.io/github/release/pozgo/docker-gitlab-ce.svg)](http://microbadger.com/images/polinux/gitlab-ce)  
@@ -11,8 +11,8 @@
 Felling like supporting me in my projects use donate button. Thank You!  
 [![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
 
-[Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server. 
-It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users. 
+[Docker Image](https://registry.hub.docker.com/u/polinux/gitlab-ce/) with GitLab Server.
+It's build the same way offcial images but with this image we added missing options into the docker image and will keep adding more features when requested by users.
 
 Options added so far:  
 - Backup Time (crontab based)  
@@ -45,7 +45,7 @@ docker run \
     polinux/gitlab-ce
 ```
 
-Set backup time to 15:00 
+Set backup time to 15:00
 ```bash
 docker run \
     -d \
