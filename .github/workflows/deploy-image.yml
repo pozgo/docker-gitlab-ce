@@ -1,0 +1,22 @@
+name: Deploy GitLab
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy image
+        run: |
+          export RELEASE=$(grep "RELEASE_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}')
+          docker pull polinux/gitlab-ce:stage
+          docker tag polinux/gitlab-ce:stage polinux/gitlab-ce:${RELEASE}
+          docker login  -u ${{ secrets.DOCKER_HUB_USER }} -p ${{ secrets.DOCKER_HUB_PASS }}
+          docker push polinux/gitlab-ce:${RELEASE}
+          docker push polinux/gitlab-ce:latest
