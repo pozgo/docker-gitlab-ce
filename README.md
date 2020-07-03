@@ -1,6 +1,5 @@
 # GitLab in a Docker on Steroids
-
-[![Build Status](https://jenkins.ozgo.info/jenkins/buildStatus/icon?job=ghp-pozgo-docker-gitlab)](https://jenkins.ozgo.info/jenkins/job/ghp-pozgo-docker-gitlab/)  
+[![Build](https://github.com/pozgo/docker-gitlab-ce/workflows/Build%20&%20Test%20GitLab/badge.svg)](https://github.com/pozgo/docker-gitlab-ce/actions)  
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-gitlab-ce.svg)](https://github.com/pozgo/docker-gitlab-ce/issues) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpozgo%2Fdocker-gitlab-ce.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpozgo%2Fdocker-gitlab-ce?ref=badge_shield)
 
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-gitlab-ce.svg?style=social&label=Stars)]()
