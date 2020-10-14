@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 ENV   BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
