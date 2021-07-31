@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 
 ENV   BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
