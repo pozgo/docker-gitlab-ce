@@ -20,6 +20,7 @@ RUN \
     vim \
     tzdata \
     cron \
+    perl \
     nano && \
   rm -rf /var/lib/apt/lists/* && \
   sed 's/session\s*required\s*pam_loginuid.so/session optional pam_loginuid.so/g' -i /etc/pam.d/sshd && \
