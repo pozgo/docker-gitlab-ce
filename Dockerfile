@@ -1,12 +1,12 @@
-FROM ubuntu:xenial-20210416
+FROM debian:12
 
 ENV   BACKUP_TIME="0 12 * * *" \
       PATH=/opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH \
       TERM=xterm \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
-      RELEASE_VERSION=14.6.0-ce.0 \
-      DOWNLOAD_URL=https://downloads-packages.s3.amazonaws.com/ubuntu-xenial/gitlab-ce_14.6.0-ce.0_amd64.deb
+      RELEASE_VERSION=16.1.2-ce.0 \
+      DOWNLOAD_URL=https://packages.gitlab.com/gitlab/gitlab-ce/packages/debian/bookworm/gitlab-ce_16.1.2-ce.0_amd64.deb/download.deb
 
 COPY container-files /
 
@@ -20,6 +20,7 @@ RUN \
     vim \
     tzdata \
     cron \
+    perl \
     nano && \
   rm -rf /var/lib/apt/lists/* && \
   sed 's/session\s*required\s*pam_loginuid.so/session optional pam_loginuid.so/g' -i /etc/pam.d/sshd && \
