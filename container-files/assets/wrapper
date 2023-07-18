@@ -46,6 +46,7 @@ crontab -l
 if [[ ! -e /etc/gitlab/gitlab.rb ]]; then
     echo "Installing gitlab.rb config..."
     cp /opt/gitlab/etc/gitlab.rb.template /etc/gitlab/gitlab.rb
+    echo "package['modify_kernel_parameters'] = false" >> /etc/gitlab/gitlab.rb
     chmod 0600 /etc/gitlab/gitlab.rb
 fi
 
