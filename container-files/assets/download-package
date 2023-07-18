@@ -2,7 +2,7 @@
 
 if [[ ${DOWNLOAD_URL} == *"amazonaws"* ]]; then
     echo "Downloading package from Amazon bucket - ${DOWNLOAD_URL}"
-    wget ${DOWNLOAD_URL} -O /tmp/gitlab.deb
+    wget --content-disposition ${DOWNLOAD_URL} -O /tmp/gitlab.deb
 else
     echo "Downloading package as artifact - ${DOWNLOAD_URL}"
     # If we are fetching the package which is available as an artifact, we need
