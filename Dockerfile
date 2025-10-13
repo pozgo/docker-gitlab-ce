@@ -5,8 +5,8 @@ ENV   BACKUP_TIME="0 12 * * *" \
       TERM=xterm \
       PACKAGECLOUD_REPO=gitlab-ce \
       RELEASE_PACKAGE=gitlab-ce \
-      RELEASE_VERSION=16.1.2-ce.0 \
-      DOWNLOAD_URL=https://packages.gitlab.com/gitlab/gitlab-ce/packages/debian/bookworm/gitlab-ce_16.1.2-ce.0_amd64.deb/download.deb
+      RELEASE_VERSION=18.2.7-ce.0 \
+      DOWNLOAD_URL=https://packages.gitlab.com/gitlab/gitlab-ce/packages/debian/bookworm/gitlab-ce_18.2.7-ce.0_amd64.deb/download.deb
 
 COPY container-files /
 
